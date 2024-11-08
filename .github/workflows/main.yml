@@ -21,7 +21,7 @@ jobs:
             - name: Sync Upstream
               uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
               with:
-                  target_repo_token: ${{ WORKERVLESS2SUB }}
+                  target_repo_token: ${{ 0150ed9c-4de3-c841-980b-d40398135d36 }}
                   upstream_sync_repo: cmliu/WorkerVless2sub
                   upstream_sync_branch: main
                   target_sync_branch: main
