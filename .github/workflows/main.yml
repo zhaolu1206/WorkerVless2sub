@@ -21,10 +21,10 @@ jobs:
             - name: Sync Upstream
               uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
               with:
-                  target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+                  target_repo_token: ${{ WORKERVLESS2SUB }}
                   upstream_sync_repo: cmliu/WorkerVless2sub
-                  upstream_sync_branch: WorkerVless2sub
-                  target_sync_branch: WorkerVless2sub
+                  upstream_sync_branch: main
+                  target_sync_branch: main
                   test_mode: false
 
             - name: Check for Failure
