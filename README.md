@@ -1,5 +1,5 @@
-# 优选订阅生成器 WorkerVless2sub -   [آموزش به زبان فارسی کلیک کنید](README-FA.md)
-
+# 优选订阅生成器 WorkerVless2sub
+![sub](./sub.png)
 ### 这个是一个通过 Cloudflare Workers 搭建，自动生成优选线路 VLESS / Trojan 节点订阅内容生成器 [[实现原理]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networks](https://alice.ws/aff.php?aff=15)提供的云服务器维持[CM订阅转换服务](https://sub.fxxk.dedyn.io/)！**
@@ -196,6 +196,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networ
 | PATH | `/?ed=2560` | 快速订阅内置节点的路径信息 | 
 | SNI | `www.10068.cn` | 快速订阅内置节点的SNI信息（留空则默认同`host`） | 
 | TYPE | `splithttp` | 快速订阅内置节点的传输协议信息（留空则默认为`ws`） | 
+| ALPN | `h3` | Alpn（留空则默认为`http/1.1`） | 
 | ADD | `icook.tw:2053#官方优选域名` | 对应`addresses`字段 (支持多元素, 元素之间使用`,`或`换行`作间隔) | 
 | ADDAPI | [https://raw.github.../addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt) | 对应`addressesapi`字段 (支持多元素, 元素之间使用`,`或`换行`作间隔) | 
 | ADDNOTLS | `icook.hk:8080#官方优选域名` | 对应`addressesnotls`字段 (支持多元素, 元素之间使用`,`或`换行`作间隔) | 
@@ -207,7 +208,8 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networ
 | TGID | `6946912345` | 接收TG通知的账户数字ID | 
 | SUBAPI | `subapi.fxxk.dedyn.io` | clash、singbox等 订阅转换后端 | 
 | SUBCONFIG | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash、singbox等 订阅转换配置文件 | 
-| SUBNAME | `WorkerVless2sub` | 订阅生成器名称 | 
+| SUBNAME | `优选订阅生成器` | 订阅生成器名称 | 
+| BY | `提供维护: <a href='https://t.me/CMLiussss'>CMLiussss</a>` | 主页维护信息 | 
 | SOCKS5DATA | [https://raw.github.../socks5Data](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/socks5Data) | Socks5代理池 | 
 | PS | `【请勿测速】` | 节点名备注消息 | 
 | PROXYIP | `proxyip.fxxk.dedyn.io` | 默认分配的ProxyIP, 多ProxyIP将随机分配(支持多元素, 元素之间使用`,`或`换行`作间隔) | 
@@ -221,6 +223,6 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networ
 [![Stargazers over time](https://starchart.cc/cmliu/WorkerVless2sub.svg?variant=adaptive)](https://starchart.cc/cmliu/WorkerVless2sub)
 
 # 致谢
-<a href="https://alice.ws/aff.php?aff=15"><img src="https://alicenetworks.net/templates/lagom2/assets/img/logo/logo_big.194980063.png" width="150" height="75" alt="Alice Networks LTD"/></a>，[SAKURA-YUMI](https://github.com/SAKURA-YUMI)，[EzSync](https://github.com/EzSync)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)、
+<a href="https://alice.ws/aff.php?aff=15"><img src="https://alicenetworks.net/templates/lagom2/assets/img/logo/logo_big.194980063.png" width="150" height="75" alt="Alice Networks LTD"/></a>，[SAKURA-YUMI](https://github.com/SAKURA-YUMI)，[EzSync](https://github.com/EzSync)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)、[3Kmfi6HP](https://github.com/6Kmfi6HP/EDtunnel/blob/main/.github/workflows/obfuscator.yml)
 
 
